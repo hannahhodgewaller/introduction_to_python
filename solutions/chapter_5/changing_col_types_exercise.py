@@ -20,7 +20,7 @@ pun_animals.loc[pun_animals["weight_kg"] == "113kg", "weight_kg"] = 113
 
 # 3 - Convert the type
 
-pun_animals["weight_kg"] = pun_animals["weight_kg"].astype("int64")
+pun_animals["weight_kg"] = pun_animals["weight_kg"].astype("float64")
 
 # print out changed column dtypes
 

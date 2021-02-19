@@ -1,8 +1,8 @@
-﻿# Filter the animals DataFrame:
+# Filter the animals DataFrame:
 
-# Filter the animals DataFrame where the AnimalClass was Mammal or the PumpHoursTotal was greater than 8.
+# Filter the animals DataFrame where the 'PropertyType' was "River/canal" or the `"PumpHoursTotal"` was greater than 8.
 
 
-mammals_pumphours = animals[(animals['AnimalClass'] == "Mammal") | (animals['PumpHoursTotal'] > 8)]
+river_pumphours = animals[(animals['PropertyType'] == "River/canal") | (animals['PumpHoursTotal'] > 8)]
 
-mammals_pumphours.head()
+river_pumphours
