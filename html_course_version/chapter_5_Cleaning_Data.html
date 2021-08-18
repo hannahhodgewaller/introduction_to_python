@@ -523,7 +523,7 @@ div.tocify {
 <div id="using-.loc" class="section level2" number="3.1">
 <h2 number="3.1"><span class="header-section-number">3.1</span> Using .loc[]</h2>
 <p>We’ve already seen one action of <code>.loc[]</code> when we created our new Boolean column with the missing values.</p>
-<p><code>.loc[]</code> can be used to access groups of rows and columns by either using labels or a Boolean array. In fact you could do any of the selection we did in Chapter 4 this way.</p>
+<p><code>.loc[]</code> can be used to access groups of rows and columns by either using labels or a Boolean array. In fact you could do any of the selection we did in Chapter 4 this way. In the additional content (chapter 7) we explore how to do this.</p>
 <p>However here we’re going to use <code>.loc[]</code> to update some values.</p>
 <p>In the cell below we’re looking at the unique values of the <code>AnimalGroupParent</code> column.</p>
 <p>Here we can see two values <code>Cow</code> and <code>Bull</code> that relate to the same kind of animal.</p>
@@ -2554,7 +2554,7 @@ TRUE
 </div>
 <div id="fixing-the-missing-value-in-place." class="section level2" number="5.3">
 <h2 number="5.3"><span class="header-section-number">5.3</span> Fixing the missing value in place.</h2>
-<p>The second method to correct the column is to fill and replace the value. As i’ve already done some cleaning and processing to this data, if we read the data back in, we’d have to perform this cleaning again.</p>
+<p>The second method to correct the column is to fill and replace the value. As I’ve already done some cleaning and processing to this data, if we read the data back in, we’d have to perform this cleaning again.</p>
 <p>If you know that there’s non standard missing values, it’s best to sort them out when you load in your data; but they can be handled later – using methods like <code>.loc[]</code> and then converting to a numerics with <code>pd.to_numeric()</code> like we’ve seen before.</p>
 <p>You may notice that the columns <code>.dtype</code> is now <code>float64</code> - Older versions of Pandas do not have a missing data type for integers.</p>
 <p>Panda’s has introduced a nullable integer data type from version 1.0.0. You can find more information about that version <a href="https://pandas.pydata.org/pandas-docs/stable/user_guide/integer_na.html">in this link</a> as the majority of our learners use an older versions of Pandas we don’t cover it in this course.</p>
